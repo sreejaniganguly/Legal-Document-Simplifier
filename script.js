@@ -18,7 +18,7 @@ document.getElementById("analyseBtn").addEventListener("click", async function (
   formData.append("pdf", file);
 
   try {
-    const response = await fetch("http://localhost:3000/analyze", {
+    const response = await fetch( "https://legal-document-simplifier-lsfx.onrender.com/analyse" ,{
       method: "POST",
       body: formData
     });
@@ -48,7 +48,7 @@ async function setLang(lang) {
   }
 
   try {
-    const response = await fetch("http://localhost:3000/translate", {
+    const response = await fetch("http://legal-document-simplifier-lsfx.onrender.com/translate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data: englishData, lang: lang })
