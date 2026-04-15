@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Legal Document Simplifier </title>
+    <link rel="stylesheet" href="style.css">
+
+    <div class="lang-toggle">
+    <button onclick="setLang('en')" id="btn-en" class="lang-btn active">EN</button>
+    <button onclick="setLang('hi')" id="btn-hi" class="lang-btn">HI</button>
+    <button onclick="setLang('bn')" id="btn-bn" class="lang-btn">BN</button>
+</div>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1> Legal Document Simplifier </h1>
+        <p> Upload your legal documents and get a simple summary versions in seconds! </p>
+    </header>
+
+    <!--Main Content-->
+    <main>
+
+        <div class="upload-box">
+            <label for="pdfInput"> Upload Legal pdf</label>
+            <input type="file" id="pdfInput" accept=".pdf">
+            <button id="analyseBtn">Analyse Document</button>
+            </div>
+
+            <div class="output" id="outputsection">
+                <div class="card">
+                    <h2> Summary</h2>
+                    <ul id="summary"></ul>
+                </div>
+                <div class="card">
+                    <h2> Risks </h2>
+                    <ul id="risks"></ul>
+                </div>
+                <div class="risk-meter">
+                    <h2> Risk Level</h2>
+                    <div class="meter-bar">
+                        <div class="meter-fill" id="meterFill"></div>
+                    </div>
+                    <p id="riskLabel">-</p>
+                </div>
+
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <p> Made by Sreejani Ganguly &nbsp; | &nbsp; 
+            <a href="https://www.linkedin.com/in/sreejaniganguly/" target="_blank">LinkedIn</a> &nbsp; | &nbsp;
+            <a href="https://github.com/sreejaniganguly" target="_blank">GitHub</a>
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+
+            
+</body>
+</html>
