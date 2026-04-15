@@ -12,17 +12,14 @@ TECH STACK USED :
 2. Backend- Node.js
 3. Version Control- Git & GitHub
 
-   SETUP
-   
- Run locally:
- git clone 
- https://github.com/sreejaniganguly/Legal-Document-Simplifier.git
+SETUP :
+git clone - https://github.com/sreejaniganguly/Legal-Document-Simplifier.git
 cd Legal-Document-Simplifier
 npm install
 node server.js
 
-Open:
-http://localhost:3000
+## Live Demo : 
+## Run the project locally: http://localhost:3000
 
 API Keys :
 Uses AI APIs for text simplification
