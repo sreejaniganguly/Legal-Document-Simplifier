@@ -19,13 +19,20 @@ app.use((req, res, next) => {
   next();
 });
 
-app.post('/analyze', upload.single('pdf'), async (req, res) => {
+    app.post('/analyse', upload.single('pdf'), async (req, res) => {
   try {
-    const pdf = require('pdf-parse');
-    const pdfData = await pdfParse(req.file.buffer);
-    const pdfText = pdfData.text.slice(0, 3000);
-    savedDocumentText = pdfText;
-
+    return res.json({
+      summary: ["This is a sample summary of the document."],
+      risks: ["No major risks detected."],
+      clauses: ["Clause analysis will appear here."]
+    });
+  } catch (err) {
+    return res.status(500).json({
+      summary: ["Error"],
+      risks: ["Try again"]
+    });
+  }
+});
     const completion = await groq.chat.completions.create({
       model: "llama-3.3-70b-versatile",
       messages: [{
