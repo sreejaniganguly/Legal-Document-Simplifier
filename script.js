@@ -18,7 +18,7 @@ document.getElementById("analyseBtn").addEventListener("click", async function (
   formData.append("pdf", file);
 
   try {
-    const response = await fetch( "https://legal-document-simplifier-lsfx.onrender.com/analyse" ,{
+    const response = await fetch( "https://legal-document-simplifier-1.onrender.com/analyse" ,{
       method: "POST",
       body: formData
     });
