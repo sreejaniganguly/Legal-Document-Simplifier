@@ -18,7 +18,7 @@ cd Legal-Document-Simplifier
 npm install
 node server.js
 
-## Live Demo : https://legal-document-simplifier-lsfx.onrender.com 
+## Live Demo : https://legal-document-simplifier-1-wlqs.onrender.com
 ## Run the project locally: http://localhost:3000
 
 API Keys :
