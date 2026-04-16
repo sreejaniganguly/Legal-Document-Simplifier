@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 
     app.post('/analyse', upload.single('pdf'), async (req, res) => {
   try {
-    return res.json({
+      res.json({
       summary: ["This is a sample summary of the document."],
       risks: ["No major risks detected."],
       clauses: ["Clause analysis will appear here."]
